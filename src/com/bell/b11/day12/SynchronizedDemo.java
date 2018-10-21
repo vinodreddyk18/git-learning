@@ -41,7 +41,9 @@ class SimpleThread extends Thread{
         if(amt>account.getBalance()){
             System.out.println("Hello "+ name+ " Doesn't have enough balance");
         }else{
+            synchronized (account){
             account.withDraw(amt);
+            }
             System.out.println("Hello "+ name + " Thank you for the service....Remaining Amount "+account.getBalance());
         }
     }
