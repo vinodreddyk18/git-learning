@@ -13,6 +13,27 @@ public class CollectionIntroductionDemo {
         color.add("White");
         color.add("Blue");
 
+
+        color.remove("Green");
+
+        System.out.println(color.contains("White"));
+
+        System.out.println(color.get(3));
+
+        System.out.println(color.isEmpty());
+
+        //color.clear();
+
+        //String[] arry = (String[])color.toArray();
+
+        ArrayList<String> color2 = new ArrayList<>();
+
+        color2.add("Pink");
+        color2.add("Purple");
+        color2.add("orange");
+
+        color.addAll(color2);
+
        for(String s:color){
            System.out.println(s);
        }
